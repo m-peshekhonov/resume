@@ -9,6 +9,15 @@
     ],
     content: [
         {
+            block: 'top',
+            content: [
+                {
+                    elem: 'text',
+                    content: 'Наверх'
+                }
+            ]
+        },
+        {
             elem: 'inner',
             content: [
                 {
@@ -19,6 +28,7 @@
                             content: [
                                 {
                                     elem: 'h1',
+                                    elemMods: { border: 'yes' },
                                     content: 'Общие вопросы'
                                 }
                             ]
@@ -111,7 +121,7 @@
                                 },
                                 {
                                     elem: 'text',
-                                    content: 'Средний уровень. Прочитать текст понимаю о чём идёт речь.'
+                                    content: 'Средний уровень знания английского. Прочитав текст понимаю о чём идёт речь.'
                                 }
                             ]
                         },
@@ -120,7 +130,7 @@
                             content: [
                                 {
                                     elem: 'h2',
-                                    content: 'Учёба в ШРИ'
+                                    content: 'Цели учёбы в ШРИ'
                                 },
                                 {
                                     block: 'text',
@@ -177,6 +187,7 @@
                             content: [
                                 {
                                     elem: 'h1',
+                                    elemMods: { border: 'yes' },
                                     content: 'Опыт разработки'
                                 }
                             ]
@@ -207,7 +218,7 @@
                                                             url: 'http://business.yandex.com.tr/',
                                                             target: '_blank',
                                                             content: 'business.yandex.com.tr'
-                                                        }, ' — Турейцкий промо-сайт Яндекса'
+                                                        }, ' — Турецкий промо-сайт Яндекса'
                                                     ]
                                                 },
                                                 {
@@ -218,7 +229,7 @@
                                                             url: 'http://personalization.yandex.ru',
                                                             target: '_blank',
                                                             content: 'personalization.yandex.ru'
-                                                        }, ' — Презентация персональных ответов в поиске.'
+                                                        }, ' — Страница презентации Персонального поиска.'
                                                     ]
                                                 },
                                                 {

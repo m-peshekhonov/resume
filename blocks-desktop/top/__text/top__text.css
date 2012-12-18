@@ -1,0 +1,23 @@
+.top__text
+{
+    background: url(top__text.gif) no-repeat 0 5px;
+
+    font-weight: 700;
+    color: #464646;
+
+    position: fixed;
+    top: 57px;
+    left: 3%;
+
+    width: 100px;
+    height: 13px;
+
+    opacity: 0.45;
+
+    padding: 0 0 0 20px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}

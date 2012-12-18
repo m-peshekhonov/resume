@@ -3,8 +3,9 @@
     background: #f4f4f4;
 
     position: relative;
+    z-index: 2;
 
-    margin: auto;
+    margin: -10px auto;
     padding: 0 2.5em 1em;
 
     width: 65%;

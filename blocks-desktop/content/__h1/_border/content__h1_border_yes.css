@@ -1,0 +1,19 @@
+.content__h1_border_yes:after
+{
+    content: "";
+
+    height: 1px;
+    width: 95%;
+
+    background: #ddd;
+
+    background: -webkit-linear-gradient(left,  transparent , #ddd 50%, transparent);
+    background: -moz-linear-gradient(left,  transparent,#ddd 50%,transparent);
+    background: -o-linear-gradient(left,  transparent,#ddd 50%,transparent);
+    background: -ms-linear-gradient(left,  transparent,#ddd 50%,transparent);
+    background: linear-gradient(to right,  transparent,#ddd 50%,transparent);
+
+    margin: 7px auto 0;
+
+    display: block;
+}
