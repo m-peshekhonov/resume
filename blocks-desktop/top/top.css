@@ -12,7 +12,7 @@
 
     cursor: pointer;
 
-    display: block;
+    display: none;
 
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -20,7 +20,17 @@
     transition: .3s;
 }
 
+.top_visiblity_visible
+{
+    display: block;
+}
+
 .top:hover
 {
     background: rgba(255,255,255,.5);
+}
+
+.top:hover .top__text
+{
+    opacity: 1;
 }
