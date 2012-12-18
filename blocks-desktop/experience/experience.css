@@ -8,6 +8,12 @@
     opacity: 1;
 }
 
+.experience .text__li
+{
+    padding: .4em 0;
+    color: #707070;
+}
+
 .experience .text__li:not(:hover)
 {
     -webkit-transition: .3s;
@@ -22,9 +28,4 @@
     -ms-opacity: .5;
     -o-opacity: .5;
     opacity: .5;
-}
-
-.experience .text__li
-{
-    padding: .4em 0;
 }
