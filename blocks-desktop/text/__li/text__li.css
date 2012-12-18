@@ -1,0 +1,20 @@
+
+.text__li
+{
+    padding: .2em 0;
+}
+
+.text__li:before
+{
+    position: absolute;
+
+    margin-left: -48px;
+    width: 40px;
+
+    color: #999;
+
+    content: counter(list, decimal) ".";
+    counter-increment: list;
+
+    text-align: right;
+}

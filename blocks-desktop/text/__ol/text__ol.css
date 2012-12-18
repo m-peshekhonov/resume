@@ -1,0 +1,7 @@
+.text__ol
+{
+    counter-reset: list;
+    list-style: none outside none;
+
+    margin-left: -40px;
+}

@@ -1,0 +1,4 @@
+block link {
+       tag: 'a',
+       attrs: { href: this.ctx.url, alt: this.ctx.alt || '', target: this.ctx.target || '' }
+}

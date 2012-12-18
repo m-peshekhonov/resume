@@ -1,0 +1,6 @@
+block content {
+   elem pic {
+       tag: 'img',
+       attrs: { src: this.ctx.url, alt: this.ctx.alt || '' }
+   }
+}

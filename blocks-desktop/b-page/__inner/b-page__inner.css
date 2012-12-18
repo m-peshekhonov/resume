@@ -5,10 +5,10 @@
     position: relative;
 
     margin: auto;
-    padding: 2.5em;
+    padding: 0 2.5em 1em;
 
     width: 65%;
-    min-width: 500px;
+    min-width: 600px;
 
     border: 1px solid #d9d9d9;
 }
