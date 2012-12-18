@@ -1,0 +1,14 @@
+.b-page__inner
+{
+    background: #f4f4f4;
+
+    position: relative;
+
+    margin: auto;
+    padding: 2.5em;
+
+    width: 65%;
+    min-width: 500px;
+
+    border: 1px solid #d9d9d9;
+}
