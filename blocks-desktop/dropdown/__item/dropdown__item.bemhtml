@@ -1,0 +1,5 @@
+block dropdown {
+    elem item {
+        tag: 'li'
+    }
+}

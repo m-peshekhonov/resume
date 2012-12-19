@@ -1,14 +1,15 @@
 .menu__item
 {
     display: inline-block;
+    position: relative;
 }
 
 .menu__item .link
 {
-    color: #eee;
+    color: #ddd;
     font-weight: 700;
 
-    padding: 12px;
+    padding: 14px 15px;
 
    -webkit-transition: background-color .3s ease-in;
    -moz-transition: background-color .3s ease-in;
@@ -18,13 +19,13 @@
 
 .menu__item .link:hover
 {
+    background: rgba(255, 255, 255, 0.18);
     color: #fff;
-    background: #808080;
 
     opacity: 1;
 
-   -webkit-transition: background-color .01s;
-   -moz-transition: background-color .01s;
-   -o-transition: background-color .01s;
+    -webkit-transition: background-color .01s;
+    -moz-transition: background-color .01s;
+    -o-transition: background-color .01s;
     transition: background-color .01s;
 }

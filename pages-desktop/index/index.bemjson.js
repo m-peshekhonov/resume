@@ -33,6 +33,92 @@
                                             block: 'link',
                                             url: '#info',
                                             content: 'Общая информация'
+                                        },
+                                        {
+                                            block: 'dropdown',
+                                            mix: [{ block: 'menu', elem: 'dropdown' }],
+                                            content: [
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#fio',
+                                                            content: 'ФИО'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#birthday',
+                                                            content: 'Год рождения'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#locale',
+                                                            content: 'Место жительства'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#education',
+                                                            content: 'Образование'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#languages',
+                                                            content: 'Языки'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#school',
+                                                            content: 'Учёба в ШРИ'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#source',
+                                                            content: 'Источник'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#times',
+                                                            content: 'Время'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -74,6 +160,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'fio' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -87,6 +174,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'birthday' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -100,6 +188,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'locale' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -113,6 +202,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'education' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -126,11 +216,11 @@
                                             content: [
                                                 {
                                                     elem: 'li',
-                                                    content: 'Законченное высшее, 2007-2012, г. Ялта. Ялтинский Университет Менеджмента. Специальность: программное обеспечение автоматизированных систем.'
+                                                    content: 'Законченное высшее, 2007-2012, г. Ялта. Ялтинский Университет Менеджмента. Специальность: Программное обеспечение автоматизированных систем.'
                                                 },
                                                 {
                                                     elem: 'li',
-                                                    content: 'Выпускник(магистр), 2012-2013, г. Ялта. Крымский Гуманитарный Институт. Специальность: системные науки и кибернетика.'
+                                                    content: 'Выпускник(магистр), 2012-2013, г. Ялта. Крымский Гуманитарный Институт. Специальность: Системные науки и кибернетика.'
                                                 }
                                             ]
                                         }
@@ -140,6 +230,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'languages' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -153,6 +244,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'school' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -184,6 +276,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'source' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -197,6 +290,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'times' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -265,7 +359,7 @@
                                                             url: 'http://personalization.yandex.ru',
                                                             target: '_blank',
                                                             content: 'personalization.yandex.ru'
-                                                        }, ' — Страница презентации Персонального поиска.'
+                                                        }, ' — Страница презентации Персонального поиска'
                                                     ]
                                                 },
                                                 {
@@ -309,7 +403,7 @@
                                                             url: 'http://mobile.yandex.ru/promo/yandex/m/wp/',
                                                             target: '_blank',
                                                             content: 'mobile.yandex.ru/promo/yandex/m/wp/'
-                                                        }, '  — Страница сервисов Яндекса для тач устройст (Windows Phone).'
+                                                        }, '  — Страница сервисов Яндекса для тач-устройств (Windows Phone).'
                                                     ]
                                                 },
                                                 {
@@ -520,7 +614,7 @@
                                             content: [
                                                 {
                                                     elem: 'li',
-                                                    content: '<b>моб.</b> 095 499 50 42'
+                                                    content: '<b>Моб.</b> 095 499 50 42'
                                                 },
                                                 {
                                                     elem: 'li',

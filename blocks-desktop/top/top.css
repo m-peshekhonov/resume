@@ -20,11 +20,6 @@
     transition: .3s;
 }
 
-.top_visiblity_visible
-{
-    display: block;
-}
-
 .top:hover
 {
     background: rgba(255,255,255,.5);
