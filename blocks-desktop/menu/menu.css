@@ -1,0 +1,27 @@
+.menu
+{
+    background: #4e4e4e;
+
+    padding: 10px 21px;
+    margin-left: -2.5em;
+
+    width: 962px;
+
+    overflow: hidden;
+
+    -webkit-box-shadow: 0 0 1px #000 inset;
+    -moz-box-shadow: 0 0 1px #000 inset;
+    -o-box-shadow: 0 0 1px #000 inset;
+    box-shadow: 0 0 1px #000 inset;
+
+    text-align: center;
+}
+
+.menu_state_fixed
+{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    opacity: .93;
+}

@@ -1,0 +1,30 @@
+.menu__item
+{
+    display: inline-block;
+}
+
+.menu__item .link
+{
+    color: #eee;
+    font-weight: 700;
+
+    padding: 12px;
+
+   -webkit-transition: background-color .3s ease-in;
+   -moz-transition: background-color .3s ease-in;
+   -o-transition: background-color .3s ease-in;
+   transition: background-color .3s ease-in;
+}
+
+.menu__item .link:hover
+{
+    color: #fff;
+    background: #808080;
+
+    opacity: 1;
+
+   -webkit-transition: background-color .01s;
+   -moz-transition: background-color .01s;
+   -o-transition: background-color .01s;
+    transition: background-color .01s;
+}

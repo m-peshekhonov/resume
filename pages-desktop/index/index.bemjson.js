@@ -24,12 +24,37 @@
                     block: 'content',
                     content: [
                         {
-                            elem: 'item',
+                            block: 'menu',
                             content: [
                                 {
-                                    elem: 'h1',
-                                    elemMods: { border: 'yes' },
-                                    content: 'Общие вопросы'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'link',
+                                            url: '#info',
+                                            content: 'Общая информация'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'link',
+                                            url: '#experience',
+                                            content: 'Опыт разработки'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'link',
+                                            url: '#contacts',
+                                            content: 'Контактные данные'
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -38,6 +63,7 @@
                             content: [
                                 {
                                     elem: 'h2',
+                                    attrs: { id: 'info' },
                                     content: 'Фотокарточка'
                                 },
                                 {
@@ -187,6 +213,7 @@
                             content: [
                                 {
                                     elem: 'h1',
+                                    attrs: { id: 'experience' },
                                     elemMods: { border: 'yes' },
                                     content: 'Опыт разработки'
                                 }
@@ -342,7 +369,7 @@
                             content: [
                                 {
                                     elem: 'h2',
-                                    content: 'Среда разработчки'
+                                    content: 'Среда разработки'
                                 },
                                 {
                                     elem: 'text',
@@ -468,6 +495,58 @@
                                 {
                                     elem: 'text',
                                     content:  'В студии в основном занимаюсь версткой, пишу несложные скрипты (Сейчас изучаю более подробно JS). Опыт работы в команде есть.'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'item',
+                            content: [
+                                {
+                                    elem: 'h1',
+                                    attrs: { id: 'contacts' },
+                                    elemMods: { border: 'yes' },
+                                    content: 'Контактные данные'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'item',
+                            content: [
+                                {
+                                    block: 'text',
+                                    content: [
+                                        {
+                                            elem: 'ol',
+                                            content: [
+                                                {
+                                                    elem: 'li',
+                                                    content: '<b>моб.</b> 095 499 50 42'
+                                                },
+                                                {
+                                                    elem: 'li',
+                                                    content: [
+                                                    '<b>Электропочта:</b> ',
+                                                        {
+                                                            block: 'link',
+                                                            url: 'mailto: m-peshekhonov@yandex.ua',
+                                                            content: 'm-peshekhonov@yandex.ua'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'li',
+                                                    content: [
+                                                    '<b>Skype:</b> ',
+                                                        {
+                                                            block: 'link',
+                                                            url: 'skype: peshekhonov90?call',
+                                                            content: 'peshekhonov90'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }

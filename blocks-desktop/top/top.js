@@ -8,7 +8,7 @@ function backTop(speed) {
 }
 
 $(window).scroll(function () {
-        ($(this).scrollTop() > 350) ? $('.top').addClass('top_visiblity_visible') : $('.top').removeClass('top_visiblity_visible');
+        ($(this).scrollTop() > 25) ? $('.top').addClass('top_visiblity_visible') : $('.top').removeClass('top_visiblity_visible');
     });
 
     $('.top').mousedown(function(){
