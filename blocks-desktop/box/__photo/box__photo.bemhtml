@@ -1,0 +1,5 @@
+block box,
+    elem photo {
+        tag: 'img'
+        attrs: { 'src': this.ctx.url }
+}

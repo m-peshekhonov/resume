@@ -18,6 +18,28 @@
             ]
         },
         {
+            block: 'box',
+            mods: { type: 'photo' },
+            content: [
+                {
+                    elem: 'layer',
+                    elemMods: { type: 'dark' }
+                },
+                {
+                    elem: 'close'
+                },
+                {
+                    elem: 'inner',
+                    content: [
+                        {
+                            elem: 'photo',
+                            url: '../../i/box__photo.jpg'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             elem: 'inner',
             content: [
                 {
@@ -239,8 +261,17 @@
                                     content: 'Фотокарточка'
                                 },
                                 {
-                                    elem: 'pic',
-                                    url: '../../i/content__pic.jpg'
+                                    elem: 'preview',
+                                    content: [
+                                        {
+                                            elem: 'pic',
+                                            url: '../../i/content__pic.jpg'
+                                        },
+                                        {
+                                            elem: 'zoom',
+                                            content: '+'
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -729,6 +760,18 @@
                                                             block: 'link',
                                                             url: 'skype: peshekhonov90?call',
                                                             content: 'peshekhonov90'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'li',
+                                                    content: [
+                                                    '<b>ВКонтакте:</b> ',
+                                                        {
+                                                            block: 'link',
+                                                            url: 'http://vk.com/m.peshekhonov',
+                                                            target: '_blank',
+                                                            content: 'vk.com/m.peshekhonov'
                                                         }
                                                     ]
                                                 }

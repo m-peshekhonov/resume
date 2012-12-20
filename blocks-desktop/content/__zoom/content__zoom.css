@@ -1,0 +1,38 @@
+.content__zoom
+{
+    background: #333;
+    color: #fff;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    cursor: pointer;
+
+    width: 25px;
+    height: 25px;
+
+    line-height: 25px;
+    text-align: center;
+    font-size: 130%;
+
+    -moz-opacity: .6;
+    opacity: .6;
+
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.content__preview:hover .content__zoom
+{
+    -moz-opacity: .85;
+    opacity: .85;
+}
+
+.content__preview:active .content__zoom
+{
+    -moz-opacity: 1;
+    opacity: 1;
+}

@@ -1,0 +1,26 @@
+.box__inner
+{
+    background: #000;
+
+    display: block;
+
+    margin-left: -470px;
+    margin-top: -320px;
+    padding: 20px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    z-index: 99;
+
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    -o-box-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}

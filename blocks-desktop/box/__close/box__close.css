@@ -1,0 +1,28 @@
+.box__close
+{
+    width: 100px;
+    height: 100px;
+
+    background: url(box__close.gif) 50% 50% no-repeat;
+    opacity: .4;
+
+    cursor: pointer;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+    position: fixed;
+    right: 5%;
+    top: 50%;
+
+    margin-top: -50px;
+
+    z-index: 100;
+}
+
+.box__close:hover
+{
+    opacity: 1
+}
