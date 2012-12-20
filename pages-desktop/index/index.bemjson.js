@@ -127,8 +127,94 @@
                                     content: [
                                         {
                                             block: 'link',
-                                            url: '#experience',
+                                            url: '#exp-developing',
                                             content: 'Опыт разработки'
+                                        },
+                                        {
+                                            block: 'dropdown',
+                                            mix: [{ block: 'menu', elem: 'dropdown' }],
+                                            content: [
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#experience',
+                                                            content: 'Опыт работы'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#programming',
+                                                            content: 'Программирование'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#development',
+                                                            content: 'Среды разработки'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#OS',
+                                                            content: 'ОСи'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#git',
+                                                            content: 'Система контроля версия'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#task',
+                                                            content: 'Таск-менеджеры'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#resources',
+                                                            content: 'Ресурсы'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            url: '#work',
+                                                            content: 'Работа'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -307,7 +393,7 @@
                             content: [
                                 {
                                     elem: 'h1',
-                                    attrs: { id: 'experience' },
+                                    attrs: { id: 'exp-developing' },
                                     elemMods: { border: 'yes' },
                                     content: 'Опыт разработки'
                                 }
@@ -315,6 +401,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'experience' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -447,6 +534,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'programming' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -460,6 +548,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'development' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -479,6 +568,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'OS' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -501,6 +591,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'git' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -516,6 +607,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'task' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -529,6 +621,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'resources' },
                             content: [
                                 {
                                     elem: 'h2',
@@ -581,6 +674,7 @@
                         },
                         {
                             elem: 'item',
+                            attrs: { id: 'work' },
                             content: [
                                 {
                                     elem: 'h2',
