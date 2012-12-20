@@ -3,7 +3,7 @@
     title: 'Резюме Михаила Пешехонова',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
-        { elem: 'css', url: '_index.ie.css', ie: 'lt IE 8' },
+        { elem: 'css', url: '_index', ie: true },
         { block: 'i-jquery', elem: 'core' },
         { elem: 'js', url: '_index.js' }
     ],
@@ -32,8 +32,73 @@
                     elem: 'inner',
                     content: [
                         {
-                            elem: 'photo',
-                            url: '../../i/box__photo.jpg'
+                            elem: 'photo-wrap',
+                            content: [
+                                {
+                                    elem: 'photo',
+                                    url: '../../i/box__photo.jpg'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'thumbs',
+                            content: [
+                                {
+                                    block: 'link',
+                                    url: '../../i/box__photo.jpg',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            mix: [{ block: 'box', elem: 'thumbs-item', elemMods: { state: 'current' } }],
+                                            url: '../../i/box__thumbs-item.jpg'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'link',
+                                    url: '../../i/box__photo_pic_1.jpg',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            mix: [{ block: 'box', elem: 'thumbs-item' }],
+                                            url: '../../i/box__thumbs-item_pic_1.jpg'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'link',
+                                    url: '../../i/box__photo_pic_2.jpg',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            mix: [{ block: 'box', elem: 'thumbs-item' }],
+                                            url: '../../i/box__thumbs-item_pic_2.jpg'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'link',
+                                    url: '../../i/box__photo_pic_3.jpg',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            mix: [{ block: 'box', elem: 'thumbs-item' }],
+                                            url: '../../i/box__thumbs-item_pic_3.jpg'
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'link',
+                                    url: '../../i/box__photo_pic_4.jpg',
+                                    content: [
+                                        {
+                                            block: 'image',
+                                            mix: [{ block: 'box', elem: 'thumbs-item' }],
+                                            url: '../../i/box__thumbs-item_pic_4.jpg'
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -258,7 +323,7 @@
                                 {
                                     elem: 'h2',
                                     attrs: { id: 'info' },
-                                    content: 'Фотокарточка'
+                                    content: 'Фотоальбом'
                                 },
                                 {
                                     elem: 'preview',
@@ -272,6 +337,10 @@
                                             content: '+'
                                         }
                                     ]
+                                },
+                                {
+                                    elem: 'text',
+                                    content: 'Для демонстрации знаний программирования написал скрипт <b>слайдшоу фотографий</b> на jQuery.'
                                 }
                             ]
                         },

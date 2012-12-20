@@ -1,0 +1,4 @@
+block image {
+    tag: 'img',
+    attrs: { src: this.ctx.url }
+}

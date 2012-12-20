@@ -3,8 +3,9 @@
     background: #222;
     background: -webkit-linear-gradient(top , #494949, #2e2e2e);
     background: -moz-linear-gradient(top ,#494949, #2e2e2e);
-    background: -o-linear-gradient(top , #494949, #2e2e2e) ;
-    background: linear-gradient(top , #494949, #2e2e2e) ;
+    background: -o-linear-gradient(top , #494949, #2e2e2e);
+    background: -ms-linear-gradient(top , #494949, #2e2e2e);
+    background: linear-gradient(top , #494949, #2e2e2e);
 }
 
 .dropdown__item .link
@@ -17,5 +18,6 @@
     -webkit-box-shadow: 0 -1px 0 #111 , 0 1px 0px #777 inset;
     -moz-box-shadow: 0 -1px 0 #111 , 0 1px 0px #777 inset;
     -o-box-shadow: 0 -1px 0 #111 , 0 1px 0px #777 inset;
+    -ms-box-shadow: 0 -1px 0 #111 , 0 1px 0px #777 inset;
     box-shadow: 0 -1px 0 #111 , 0 1px 0px #777 inset;
 }

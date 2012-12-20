@@ -1,5 +1,8 @@
 .content__preview
 {
     position: relative;
+
     display: inline-block;
+
+    margin-bottom: .5em;
 }

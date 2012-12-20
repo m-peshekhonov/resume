@@ -14,6 +14,7 @@
    -webkit-transition: background-color .3s ease-in;
    -moz-transition: background-color .3s ease-in;
    -o-transition: background-color .3s ease-in;
+   -ms-transition: background-color .3s ease-in;
    transition: background-color .3s ease-in;
 }
 
@@ -27,5 +28,6 @@
     -webkit-transition: background-color .01s;
     -moz-transition: background-color .01s;
     -o-transition: background-color .01s;
+    -ms-transition: background-color .01s;
     transition: background-color .01s;
 }

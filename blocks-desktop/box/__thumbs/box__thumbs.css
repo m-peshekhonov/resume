@@ -1,0 +1,10 @@
+.box__thumbs
+{
+    margin: 15px 0 0 -25px;
+}
+
+.box__thumbs .link:hover
+{
+    -moz-opacity: 1;
+    opacity: 1;
+}

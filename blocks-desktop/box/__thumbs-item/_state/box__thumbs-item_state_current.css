@@ -1,0 +1,7 @@
+.box__thumbs-item_state_current
+{
+    -moz-opacity: .5;
+    opacity: .5;
+
+    cursor: default;
+}

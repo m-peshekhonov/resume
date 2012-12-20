@@ -1,0 +1,17 @@
+.box__thumbs-item
+{
+    margin-left: 25px;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+    border: 0;
+}
+
+.box__thumbs-item:hover
+{
+    -moz-opacity: .5;
+    opacity: .5;
+}

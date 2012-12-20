@@ -9,7 +9,3 @@ BEM.DOM.decl('content',
         }
     }
 });
-
-
-
-
