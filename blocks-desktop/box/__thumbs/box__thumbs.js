@@ -3,13 +3,14 @@ $(function() {
             largeImg = $(".box__photo"),
             currentClass = 'box__thumbs-item_state_current',
             currentImg = $('.b-page').find('.'+currentClass);
+            speedSlides = 500;
 
 $(".box__thumbs .link").live("click", function(evenObject) {
     if (largeImg.attr('src') != $(this).attr('href')) {
 
         largeImg.hide().attr('src', $(this).attr('href'));
         largeImg.load(function() {
-            $(this).fadeIn(600);
+            $(this).fadeIn(speedSlides);
         });
     }
     evenObject.preventDefault();
@@ -28,7 +29,7 @@ $('.box__photo').live('click', function() {
     {
         $(this).hide().attr('src', $(this).parent().parent().find('.'+currentClass).parent().attr('href'));
         $(this).load(function() {
-            $(this).fadeIn(600);
+            $(this).fadeIn(speedSlides);
         });
     }
 });
@@ -39,7 +40,7 @@ $('.box__close').live('click', function() {
     if (largeImg.attr('src') != thumbImgSrc) {
         largeImg.hide().attr('src', thumbImgSrc);
         largeImg.load(function() {
-            $(this).fadeIn(600);
+            $(this).fadeIn(speedSlides);
         });
     }
     $('.box__thumbs-item').removeClass(currentClass);
