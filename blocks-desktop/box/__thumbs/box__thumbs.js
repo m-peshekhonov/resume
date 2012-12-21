@@ -6,7 +6,7 @@ $(function() {
             currentClass = 'box__thumbs-item_state_current',
             currentImg = $('.b-page').find('.'+currentClass),
             countThumbs = $('.box__thumbs .box__thumbs-item').length,
-            mixImages = $('.box__prev, .box__photo, .box__thumbs-item'),
+            mixEvents = $('.box__prev, .box__photo, .box__thumbs-item, .box__close'),
             preview = $('.content__preview'),
             timeOut = null,
             speedSlides = 500;
@@ -23,7 +23,7 @@ $('.box__thumbs .link').live('click', function(evenObject) {
 });
 
 preview.live('click', function() {
-    mixImages.click(function(e,play){
+    mixEvents.click(function(e,play){
         if(!play){
             clearTimeout(timeOut);
         }
