@@ -25,17 +25,15 @@ $('.box__thumbs .link').live('click', function(evenObject) {
 
 if(box.hasClass('box_autoplay_yes')) {
     preview.live('click', function() {
-        function myFunc() {
-            mixEvents.click(function(e,play){
-                if(!play){
-                    clearTimeout(timeOut);
-                }
-            });
-            (function autoPlay(){
-                largeImg.trigger('click',[true]);
-                timeOut = setTimeout(autoPlay, 3000);
-            })();
-        }
+        mixEvents.click(function(e,play){
+            if(!play){
+                clearTimeout(timeOut);
+            }
+        });
+        (function autoPlay(){
+            largeImg.trigger('click',[true]);
+            timeOut = setTimeout(autoPlay, 3000);
+        })();
     });
 }
 
