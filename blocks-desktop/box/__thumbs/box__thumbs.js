@@ -1,11 +1,14 @@
 $(function() {
         var thumbImg = $('.box__thumbs .image'),
-            largeImg = $(".box__photo"),
+            largeImg = $('.box__photo'),
+            prev = $('.box__prev'),
+            close = $('.box__close'),
             currentClass = 'box__thumbs-item_state_current',
-            currentImg = $('.b-page').find('.'+currentClass);
+            currentImg = $('.b-page').find('.'+currentClass),
+            countThumbs = $('.box__thumbs .box__thumbs-item').length,
             speedSlides = 500;
 
-$(".box__thumbs .link").live("click", function(evenObject) {
+$('.box__thumbs .link').live('click', function(evenObject) {
     if (largeImg.attr('src') != $(this).attr('href')) {
 
         largeImg.hide().attr('src', $(this).attr('href'));
@@ -16,9 +19,25 @@ $(".box__thumbs .link").live("click", function(evenObject) {
     evenObject.preventDefault();
 });
 
-$('.box__photo').live('click', function() {
+prev.live('click', function() {
     var currentImg = $('.b-page').find('.'+currentClass);
+    currentImg.removeClass(currentClass).parent().prev().find('.image').addClass(currentClass);
+    if (!currentImg.parent().prev().length)
+    {
+        currentImg.removeClass(currentClass);
+        $('.box__thumbs .image').eq(countThumbs-1).addClass(currentClass);
+    }
+    if (currentImg.length)
+    {
+        $(largeImg).hide().attr('src', $('.b-page').find('.'+currentClass).parent().attr('href'));
+        $(largeImg).load(function() {
+            $(largeImg).fadeIn(speedSlides);
+        });
+    }
+});
 
+largeImg.live('click', function() {
+    var currentImg = $('.b-page').find('.'+currentClass);
     currentImg.removeClass(currentClass).parent().next().find('.image').addClass(currentClass);
     if (!currentImg.parent().next().length)
     {
@@ -27,14 +46,14 @@ $('.box__photo').live('click', function() {
     }
     if (currentImg.length)
     {
-        $(this).hide().attr('src', $(this).parent().parent().find('.'+currentClass).parent().attr('href'));
+        $(this).hide().attr('src', $('.b-page').find('.'+currentClass).parent().attr('href'));
         $(this).load(function() {
             $(this).fadeIn(speedSlides);
         });
     }
 });
 
-$('.box__close').live('click', function() {
+close.live('click', function() {
     var thumbImgSrc = thumbImg.eq(0).parent().attr('href');
 
     if (largeImg.attr('src') != thumbImgSrc) {
@@ -48,7 +67,7 @@ $('.box__close').live('click', function() {
 
 });
 
-    thumbImg.live("click", function() {
+    thumbImg.live('click', function() {
         thumbImg.removeClass(currentClass);
         $(this).addClass(currentClass);
     });

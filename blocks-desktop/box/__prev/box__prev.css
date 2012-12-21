@@ -1,0 +1,28 @@
+.box__prev
+{
+    width: 100px;
+    height: 100px;
+
+    background: url(box__prev.gif) 50% 50% no-repeat;
+    opacity: .4;
+
+    cursor: pointer;
+
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+    position: fixed;
+    left: 5%;
+    top: 50%;
+
+    margin-top: -65px;
+
+    z-index: 100;
+}
+
+.box__prev:hover
+{
+    opacity: 1
+}

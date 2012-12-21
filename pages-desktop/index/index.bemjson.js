@@ -28,6 +28,9 @@
                     elemMods: { type: 'dark' }
                 },
                 {
+                    elem: 'prev'
+                },
+                {
                     elem: 'close'
                 },
                 {
