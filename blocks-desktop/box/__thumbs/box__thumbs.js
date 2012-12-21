@@ -7,6 +7,7 @@ $(function() {
             currentImg = $('.b-page').find('.'+currentClass),
             countThumbs = $('.box__thumbs .box__thumbs-item').length,
             mixEvents = $('.box__prev, .box__photo, .box__thumbs-item, .box__close'),
+            box = $('.b-page').find('.box'),
             preview = $('.content__preview'),
             timeOut = null,
             speedSlides = 500;
@@ -22,17 +23,21 @@ $('.box__thumbs .link').live('click', function(evenObject) {
     evenObject.preventDefault();
 });
 
-preview.live('click', function() {
-    mixEvents.click(function(e,play){
-        if(!play){
-            clearTimeout(timeOut);
+if(box.hasClass('box_autoplay_yes')) {
+    preview.live('click', function() {
+        function myFunc() {
+            mixEvents.click(function(e,play){
+                if(!play){
+                    clearTimeout(timeOut);
+                }
+            });
+            (function autoPlay(){
+                largeImg.trigger('click',[true]);
+                timeOut = setTimeout(autoPlay, 3000);
+            })();
         }
     });
-    (function autoPlay(){
-        largeImg.trigger('click',[true]);
-        timeOut = setTimeout(autoPlay, 3000);
-    })();
-});
+}
 
 prev.live('click', function() {
     var currentImg = $('.b-page').find('.'+currentClass);

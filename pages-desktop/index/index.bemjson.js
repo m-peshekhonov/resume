@@ -21,7 +21,7 @@
         },
         {
             block: 'box',
-            mods: { type: 'photo' },
+            mods: { type: 'photo', autoplay: 'yes' },
             content: [
                 {
                     elem: 'layer',
