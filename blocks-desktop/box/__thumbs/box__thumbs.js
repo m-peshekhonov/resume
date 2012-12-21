@@ -6,6 +6,9 @@ $(function() {
             currentClass = 'box__thumbs-item_state_current',
             currentImg = $('.b-page').find('.'+currentClass),
             countThumbs = $('.box__thumbs .box__thumbs-item').length,
+            mixImages = $('.box__prev, .box__photo, .box__thumbs-item'),
+            preview = $('.content__preview'),
+            timeOut = null,
             speedSlides = 500;
 
 $('.box__thumbs .link').live('click', function(evenObject) {
@@ -17,6 +20,18 @@ $('.box__thumbs .link').live('click', function(evenObject) {
         });
     }
     evenObject.preventDefault();
+});
+
+preview.live('click', function() {
+    mixImages.click(function(e,play){
+        if(!play){
+            clearTimeout(timeOut);
+        }
+    });
+    (function autoPlay(){
+        largeImg.trigger('click',[true]);
+        timeOut = setTimeout(autoPlay, 3000);
+    })();
 });
 
 prev.live('click', function() {
