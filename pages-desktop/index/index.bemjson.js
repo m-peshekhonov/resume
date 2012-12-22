@@ -339,7 +339,13 @@
                                         },
                                         {
                                             elem: 'zoom',
-                                            content: '+'
+                                            content: [
+                                                '+',
+                                                {
+                                                    block: 'tooltip',
+                                                    content: 'Открыть альбом'
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
