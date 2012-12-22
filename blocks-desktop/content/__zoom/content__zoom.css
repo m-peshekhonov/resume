@@ -7,6 +7,8 @@
     top: 5px;
     right: 5px;
 
+    display: none;
+
     cursor: pointer;
 
     width: 25px;
@@ -19,10 +21,10 @@
     -moz-opacity: .6;
     opacity: .6;
 
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -33,10 +35,4 @@
 {
     -moz-opacity: .85;
     opacity: .85;
-}
-
-.content__preview:active .content__zoom
-{
-    -moz-opacity: 1;
-    opacity: 1;
 }

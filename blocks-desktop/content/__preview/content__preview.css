@@ -2,12 +2,9 @@
 {
     position: relative;
 
-    display: none;
+    display: inline-block;
 
-    margin-bottom: .5em;
-}
-
-.content__preview_display_inline
-{
-    display: inline-block !important;
+/*    margin-bottom: .5em;*/
+    width: 290px;
+    height: 193px;
 }

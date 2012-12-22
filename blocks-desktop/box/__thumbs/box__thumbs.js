@@ -13,7 +13,7 @@ $(function() {
             speedSlides = 500;
 
 $(window).load(function() {
-    preview.fadeIn(800).addClass('content__preview_display_inline');
+    $('img, .content__zoom').fadeIn(800);
 });
 
 $('.box__thumbs .link').live('click', function(evenObject) {

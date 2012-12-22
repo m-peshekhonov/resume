@@ -1,4 +1,5 @@
 .content__pic
 {
     cursor: pointer;
+    display: none;
 }
