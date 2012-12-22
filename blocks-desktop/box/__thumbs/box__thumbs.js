@@ -12,6 +12,10 @@ $(function() {
             timeOut = null,
             speedSlides = 500;
 
+$(window).load(function() {
+    preview.fadeIn(800).addClass('content__preview_display_inline');
+});
+
 $('.box__thumbs .link').live('click', function(evenObject) {
     if (largeImg.attr('src') != $(this).attr('href')) {
 

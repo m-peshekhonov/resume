@@ -2,7 +2,12 @@
 {
     position: relative;
 
-    display: inline-block;
+    display: none;
 
     margin-bottom: .5em;
+}
+
+.content__preview_display_inline
+{
+    display: inline-block !important;
 }

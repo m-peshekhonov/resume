@@ -328,7 +328,7 @@
                                 {
                                     elem: 'h2',
                                     attrs: { id: 'info' },
-                                    content: 'Фотоальбом'
+                                    content: 'Фотокарточки'
                                 },
                                 {
                                     elem: 'preview',
